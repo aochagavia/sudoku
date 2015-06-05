@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["ParseError","A structure representing an error caused when parsing the sudoku"]]});
