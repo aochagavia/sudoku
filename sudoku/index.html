@@ -45,7 +45,7 @@
             <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                 [<span class='inner'>&#x2212;</span>]
             </a>
-        </span><a id='src-0' class='srclink' href='../src/sudoku/lib.rs.html#1-249' title='goto source code'>[src]</a></span></h1>
+        </span><a id='src-0' class='srclink' href='../src/sudoku/lib.rs.html#1-268' title='goto source code'>[src]</a></span></h1>
 <div class='docblock'><p>The Sudoku library</p>
 
 <h2 id="overview" class='section-header'><a
@@ -57,16 +57,17 @@ without having to deal with too much details.</p>
                            href="#example">Example</a></h2><pre id='rust-example-rendered' class='rust '>
 <span class='kw'>use</span> <span class='ident'>sudoku</span>::<span class='ident'>Sudoku</span>;
 
-<span class='kw'>let</span> <span class='ident'>sudoku_str</span> <span class='op'>=</span>
-<span class='string'>&quot;___2___63
-3____54_1
-__1__398_
-_______9_
-___538___
-_3_______
-_263__5__
-5_37____8
-47___1___&quot;</span>;
+<span class='comment'>// Pipes are ignored, you can also omit them</span>
+<span class='kw'>let</span> <span class='ident'>sudoku_str</span> <span class='op'>=</span> <span class='string'>&quot;\
+___|2__|_63
+3__|__5|4_1
+__1|__3|98_
+___|___|_9_
+___|538|___
+_3_|___|___
+_26|3__|5__
+5_3|7__|__8
+47_|__1|___&quot;</span>;
 
 <span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>sudoku</span> <span class='op'>=</span> <span class='ident'>Sudoku</span>::<span class='ident'>from_str</span>(<span class='ident'>sudoku_str</span>).<span class='ident'>unwrap</span>();
 <span class='ident'>sudoku</span>.<span class='ident'>solve</span>();
